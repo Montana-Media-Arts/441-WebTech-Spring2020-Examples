@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Values - Data types</title>
+    </head>
+
+    <body>
+
+        <script>
+            // declaring all my variables
+            var favoriteRestaurant = "Finnegans\tRestaurant";
+            var myName = "Michael";
+            var favoriteNumber = 12;
+            var otherVariable = null;
+            var isAlive = true;
+            var secondNumber = 10;
+        
+            console.log(myName + "'s favorite restaurant is " + favoriteRestaurant);
+            console.log(favoriteNumber + secondNumber + myName );
+            console.log(favoriteNumber + secondNumber);
+            favoriteNumber+=1;
+            favoriteNumber = favoriteNumber + 1;
+            favoriteNumber++;
+            favoriteNumber--;
+            console.log(favoriteNumber);
+            console.log(otherVariable);
+            console.log(isAlive);
+            console.log(typeof(favoriteRestaurant));
+            console.log(typeof(favoriteNumber));
+           
+            function test()
+            {
+               favoriteNumber = 3;
+               console.log(favoriteNumber);  
+               var name = window.prompt("What is your name?");
+               console.log("Nice to meet you " + name);
+            }
+
+            test();
+            console.log(favoriteNumber);
+
+
+        </script>
+
+    </body>
+</html>
