@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Array Concat
+        </title>
+        <script>
+            function setInformation()
+            {   
+                var bikes = ["Salsa", "Santa Cruz", "Orbea", "Kona"];
+                var models = ["Cutthroat", "5010", "Orca", "Jake the Snake"];
+                var information = bikes.concat(models);
+                document.getElementById("info").innerHTML = information.toString();
+            }
+        </script>
+    </head>
+    <body onload="setInformation();">
+        <div style="font-size: 24px" id="info"></div>
+        <br>  
+    </body>
+</html>

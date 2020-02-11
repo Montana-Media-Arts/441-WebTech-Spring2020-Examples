@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            JSON
+        </title>
+        <script>
+            function setInformation()
+            {
+                var information = {"bike": "Santa Cruz", "model":"5010", "year":"2019"};
+                document.getElementById("info").innerHTML = "Bike: " + information.bike;    
+            }
+        </script>
+    </head>
+    <body onload="setInformation();">
+        <div id="info"></div>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Array Push
+        </title>
+        <script>
+            var information;
+            function setInformation()
+            {          
+                information = new Array();
+                information.push("Item 1");
+                information.push("Item 2");
+                information.push("Item 3");
+                information.push("Item 4");
+
+                getInformation();
+                
+            }
+
+            function getInformation()
+            {
+                var firstElement = information.pop();
+                document.getElementById("info").innerHTML = firstElement;
+                whatsLeftInArray();
+            }
+
+            function whatsLeftInArray()
+            {
+                document.getElementById("whatsleft").innerHTML = information;
+            }
+            
+            
+        </script>
+    </head>
+    <body onload="setInformation();">
+        <div style="font-size: 24px" id="info"></div>
+        <br>
+        <div style="font-size: 24px" id="whatsleft"></div>
+        <br>
+        
+    </body>
+</html>

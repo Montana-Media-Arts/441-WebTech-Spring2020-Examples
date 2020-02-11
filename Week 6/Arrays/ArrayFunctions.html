@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <title>
+            JSON FTW
+        </title>
+        <script>
+            function setInformation()
+            {
+                // get concat of two or three arrays
+                // join
+                // popping and pushing
+                // slice
+                // min/max
+                // add functions
+                var information = new Array();
+                information.push(goNextPage());
+
+                information[0];
+                //document.getElementById("info").innerHTML = information.car + ":" + information.year + ":" + information.color;
+                
+            }
+            
+            function goNextPage()
+            {
+                window.location = "Page2.html";
+            }
+        </script>
+    </head>
+    <body onload="setInformation();">
+        <div id="info"></div>
+        <br>
+        <button id="btnSubmit" onclick="goNextPage();">Go to Next Page</button>
+    </body>
+</html>

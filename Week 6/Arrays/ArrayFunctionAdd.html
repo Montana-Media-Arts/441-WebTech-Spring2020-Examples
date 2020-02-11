@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Array Function Add
+        </title>
+        <script>
+            function setInformation()
+            {
+                var information = new Array();
+                information.push(changeInformation());
+
+                information[0];
+            }
+            
+            function changeInformation()
+            {
+                document.getElementById("info").innerHTML = "This is my function called from an array.";
+            }
+        </script>
+    </head>
+    <body onload="setInformation();">
+        <div id="info"></div>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JSON FTW
+        </title>
+        <script>
+            function getInformation()
+            {
+                var information = {"car": "dodge", "year":"2016", "color":"blue"};
+                document.getElementById("info").innerHTML = information.car + ":" + information.year + ":" + information.color;
+                localStorage.setItem("information", JSON.stringify(information));
+            }
+            
+            function goNextPage()
+            {
+                window.location = "Page2.html";
+            }
+        </script>
+    </head>
+    <body onload="getInformation();">
+        <div id="info"></div>
+        <br>
+        <button id="btnSubmit" onclick="goNextPage();">Go to Next Page</button>
+    </body>
+</html>
