@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        
+        function showBikeInfo() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("bikeInformation").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "bikeInfo.txt", true);
+            xhttp.send();
+        }
+</script>
+        </script>
+    </head>
+
+    <body>
+        <div id="bikeInformation"></div>
+        <button id="btnSubmit" onclick="showBikeInfo();">Show Information</button>
+    </body>
+</html>

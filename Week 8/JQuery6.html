@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".myGreatClass").animate({left: '250px'});
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="infoid">This is a paragraph.</p>
+    <p class="myGreatClass" style="background-color:red;position:absolute; top: 100px; left: 25px">This is the second paragraph.</p>
+    <button>Click me to hide paragraphs</button>
+    <br>
+</body>
+
+</html>

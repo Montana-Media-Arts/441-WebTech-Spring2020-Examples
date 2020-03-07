@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    showCatalogInfo(this);
+                }
+            };
+            xhttp.open("GET", "catalog.xml", true);
+            xhttp.send();
+        }
+
+        function showCatalogInfo(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Title</th><th>Artist</th></tr>";
+            var x = xmlDoc.getElementsByTagName("CD");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+            document.getElementById("catalogInformation").innerHTML = table;
+        }
+    </script>
+    </script>
+</head>
+
+<body>
+        <table id="catalogInformation"></table>
+    <button id="btnSubmit" onclick="loadDoc();">Show Information</button>
+</body>
+
+</html>

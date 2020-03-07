@@ -1,0 +1,14 @@
+{
+    "manufacturer" : "Santa Cruz",
+    "model" : "5010",
+    "owner" : {
+        "firstName" : "Bob",
+        "lastName" : "Jones"
+    },
+    "sizes" : [
+        "small",
+        "medium",
+        "large",
+        "x-large"
+    ]
+}

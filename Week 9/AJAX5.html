@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var test = load("emojis.json");
+                var emoji = JSON.parse(test);
+                $("bikeInformation").text(emoji.100);
+                //$("#bikeInformation").load("bikeInfo.txt", fadeText);
+            });
+        });
+
+        function fadeText()
+        {
+            $("#bikeInformation").fadeOut("slow").fadeIn("slow");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="bikeInformation"></div>
+
+    <button>Get Bike Information</button>
+
+</body>
+
+</html>

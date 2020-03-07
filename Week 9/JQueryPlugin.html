@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.fn.bluey = function () {
+            this.css("background-color", "blue");
+            this.css("color", "white");
+            this.css("font-size", 24);
+        };
+
+        $(function () {
+            $("button").click(function () {
+                $("#changeDiv").bluey();
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="changeDiv">Test information</div>
+    <button id="btnSubmit">Click</button>
+</body>
+</html>
