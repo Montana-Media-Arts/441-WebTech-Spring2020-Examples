@@ -1,0 +1,75 @@
+<html>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Green")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "Oh you chose green. What is your favorite food?";
+            }
+            else if(myChoice === "Blue")
+            {
+                myQuestion.innerHTML = "You chose blue.  What is your favorite movie?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var food = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(food === "tacos")
+            {
+                document.getElementById("mainImage").src = "taco.jpg"
+                myQuestion.innerHTML = "I love tacos on Tuesdays!";
+            }
+            else if(food === "nachos")
+            {
+                myQuestion.innerHTML = "I love nachos, but nachos do not love me.";
+            }
+        }
+    </script>
+    <body>
+
+        <h1>Into the void</h1>
+        <br>
+        <img src="tree.jpeg" id="mainImage">
+    <div id="question">
+    <br>
+        It was a dark and lonely time in Bob's life. He was wandering aimlessly and wondering where to go.
+        <br>
+        He came upon a tree and it asked him what his favorite color was.
+        <br>
+        He had only two choices.  It was Green or Blue.
+    </div>
+       
+        <br>
+        <input type="text" size="30" id="choice" value="Please enter Green or Blue">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="choice2" value="Enter favorite food." style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Enter favorite movie."  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+
+</html>
