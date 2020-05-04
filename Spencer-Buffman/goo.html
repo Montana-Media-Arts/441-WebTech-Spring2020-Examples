@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goo</title>
+    <link rel="stylesheet" href="goo.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+
+    <svg>
+        <defs>
+           <filter id="goo">
+             <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+             <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+                                                            0 1 0 0 0
+                                                            0 0 1 0 0
+                                                            0 0 0 19 -9" result="goo"/>
+             <feComposite in="SourceGraphic" in2="goo"
+             operator="atop"/>
+           </filter> 
+        </defs>
+    </svg>
+    <script src="EX_3_Partcle_Goo.js"></script>
+</body>
+</html>
