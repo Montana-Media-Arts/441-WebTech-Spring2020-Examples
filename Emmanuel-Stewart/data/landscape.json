@@ -1,0 +1,17 @@
+{
+  "assignments": [{
+
+    "name": "From long exposures to smooth running water to panning with a moving object, there are numerous ways to produce successful and artistic motion blur images. ",
+    "img": "images/long.jpg"
+  }, {
+
+    "name": "A color theme can help you get out of a photographic rut or force you to explore a scene differently. So pick a color, any color, and make that the focus of your landscape, nature or wildlife image.",
+    "img": "images/rowell.jpg"
+
+  }, {
+
+    "name": "It takes time and practice to develop an eye that’s able to envision a color scene in black and white. But once you do, you’ll be able to quickly recognize a range of tones in a scene that will translate well in black and white.",
+    "img": "images/weston.jpg"
+
+  }]
+}

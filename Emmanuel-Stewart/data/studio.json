@@ -1,0 +1,15 @@
+{
+  "assignments": [{
+
+    "name": "Recreate a still-life of photographer Josef Sudek.",
+    "img": "images/sudek1.jpg"
+  }, {
+
+    "name": "Use an all white background to create a portrait.",
+    "img":"images/avedon.jpg"
+  },
+  {
+    "name": "Take a self portrait using a reflection or shadow.",
+    "img":"images/vivian.jpg"
+  }]
+}

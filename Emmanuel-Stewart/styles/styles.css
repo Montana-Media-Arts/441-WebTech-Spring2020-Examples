@@ -1,0 +1,71 @@
+
+@font-face {
+  font-family: "typet";
+  src: url("fonts/SpecialElite-Regular.ttf");
+}
+
+
+
+body {
+
+ background-image: url("images/sketch.jpg");
+	color: #222;
+	cursor: default;
+	text-align: center;
+	flex-direction: column;
+	font-family:  'typet';
+}
+
+h1 {
+  font-size: 400%;
+}
+
+#btnSubmit {
+  background-color: #CD5C5C; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button.buttonS {
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+button.buttonS:hover {
+color: #ffffff !important;
+background: #2F4F4F;
+border-color: #778899 !important;
+transition: all 0.4s ease 0s;
+}
+
+
+
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table {
+  width:100%;
+  margin: 30px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}

@@ -1,0 +1,18 @@
+{
+  "assignments": [{
+
+    "name": "Make a photo as someone is exiting your frame.",
+    "img": "images/gilden.jpg"
+
+  }, {
+
+    "name": "Visit a museum or exhibition, and photograph the people inside",
+    "img": "images/bresson.jpg"
+
+
+  }, {
+    "name": "Try to shoot the entire day with having the simplest backgrounds as possible.",
+      "img": "images/moriyama.jpg"
+
+  }]
+}
